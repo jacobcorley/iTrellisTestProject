@@ -1,0 +1,44 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "E:\\Users\\Pafka\\RiderProjects\\iTrellisProject\\iTrellisProject.Tests\\iTrellisProject.Tests.csproj",
+    "projectName": "iTrellisProject.Tests",
+    "projectPath": "E:\\Users\\Pafka\\RiderProjects\\iTrellisProject\\iTrellisProject.Tests\\iTrellisProject.Tests.csproj",
+    "outputPath": "E:\\Users\\Pafka\\RiderProjects\\iTrellisProject\\iTrellisProject.Tests\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.0"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "projectReferences": {
+          "E:\\Users\\Pafka\\RiderProjects\\iTrellisProject\\iTrellisProject\\iTrellisProject.csproj": {
+            "projectPath": "E:\\Users\\Pafka\\RiderProjects\\iTrellisProject\\iTrellisProject\\iTrellisProject.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.0": {
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

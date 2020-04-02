@@ -1,0 +1,66 @@
+﻿[
+  {
+    "productId": 1,
+    "productName": "fugiat exercitation adipisicing",
+    "manufacturerId": 1,
+    "inventoryQuantity": 43,
+    "shipOnWeekends": true,
+    "maxBusinessDaysToShip": 13
+  },
+  {
+    "productId": 2,
+    "productName": "mollit cupidatat Lorem",
+    "manufacturerId": 1,
+    "inventoryQuantity": 70,
+    "shipOnWeekends": true,
+    "maxBusinessDaysToShip": 18
+  },
+  {
+    "productId": 3,
+    "productName": "non quis sint",
+    "manufacturerId": 2,
+    "inventoryQuantity": 33,
+    "shipOnWeekends": false,
+    "maxBusinessDaysToShip": 15
+  },
+  {
+    "productId": 4,
+    "productName": "voluptate cupidatat non",
+    "manufacturerId": 3,
+    "inventoryQuantity": 52,
+    "shipOnWeekends": false,
+    "maxBusinessDaysToShip": 18
+  },
+  {
+    "productId": 5,
+    "productName": "anim amet occaecat",
+    "manufacturerId": 1,
+    "inventoryQuantity": 39,
+    "shipOnWeekends": true,
+    "maxBusinessDaysToShip": 19
+  },
+  {
+    "productId": 6,
+    "productName": "cillum deserunt elit",
+    "manufacturerId": 2,
+    "inventoryQuantity": 47,
+    "shipOnWeekends": false,
+    "maxBusinessDaysToShip": 20
+  },
+  {
+    "productId": 7,
+    "productName": "adipisicing reprehenderit et",
+    "manufacturerId": 3,
+    "inventoryQuantity": 71,
+    "shipOnWeekends": false,
+    "maxBusinessDaysToShip": 15
+  },
+  {
+    "productId": 8,
+    "productName": "ex mollit laboris",
+    "manufacturerId": 1,
+    "inventoryQuantity": 80,
+    "shipOnWeekends": false,
+    "maxBusinessDaysToShip": 15
+  }
+]

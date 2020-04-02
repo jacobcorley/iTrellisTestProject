@@ -1,0 +1,79 @@
+﻿@page
+@using iTrellisProject.Models
+
+@{
+    var product = (ProductViewModel)ViewBag.product;
+}
+
+<h1>Product - @product.productName</h1>
+
+<table class="table single-product">
+    <tr>
+        <th>Product ID</th>
+        <td>@product.productId</td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>@product.productName</td>
+    </tr>
+    <tr>
+        <th>Manufacturer</th>
+        <td>@product.manufacturerName</td>
+    </tr>
+    <tr>
+        <th>Available Quantity</th>
+        <td>@product.inventoryQuantity</td>
+    </tr>
+    <tr>
+        <th>Weekend Shipping</th>
+        <td>@product.shipOnWeekends</td>
+    </tr>
+    <tr>
+        <th>Maximum Shipping Days</th>
+        <td>@product.maxBusinessDaysToShip</td>
+    </tr>
+
+    <tr>
+        <th>Shipment Date</th>
+        <td><input type="text" id="shipment-date"></td>
+        <script type="text/javascript">
+            $(function () {
+                // Initialize a jQuery UI datepicker & event handling
+                // Would normally do this as a Vue component, but setting up Vue for a small project like this would take pretty long
+                let holidays = JSON.parse('@Html.Raw(product.shippingHolidays)');
+                let shipOnWeekends = '@product.shipOnWeekends' === 'Yes';
+                $('#shipment-date').datepicker({
+                    'beforeShowDay': date => {
+                        let invalidShippingDay = [
+                            true, "invalid-shipping-day", null
+                        ];
+                        let validShippingDay = [
+                            true, "", null
+                        ];
+                        // Gray out days on the calendar that are unavailable for shipping
+                        if(!shipOnWeekends && (date.getDay() === 0 || date.getDay() === 6)) {
+                            return invalidShippingDay;
+                        }
+                        // Note: months in JS are zero-indexed, add 1 to get them back to 1-12 
+                        if(holidays.some(holiday => holiday.month === (date.getMonth() + 1) && holiday.day === date.getDate())) {
+                            return invalidShippingDay;
+                        }
+                        
+                        return validShippingDay;
+                    },
+                    'onSelect': (dateText) => {
+                        let date = new Date(dateText);
+                        let formattedDate = (date.getMonth() + 1) + "-" + date.getDate() + "-" + date.getFullYear();
+                        $.get('/api/estimate/@product.productId/'+formattedDate, {}, (data) => {
+                            $('#arrival-date').text(data);
+                        });
+                    }
+                });
+            });
+        </script>
+    </tr>
+    <tr>
+        <th>Estimated Arrival</th>
+        <td id="arrival-date">@product.estimatedArrival</td>
+    </tr>
+</table>

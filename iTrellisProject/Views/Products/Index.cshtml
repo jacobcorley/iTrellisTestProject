@@ -1,0 +1,28 @@
+﻿@page
+@using iTrellisProject.Models
+
+@{
+    var products = (List<ProductViewModel>)ViewBag.products;
+}
+
+<h1>All products</h1>
+
+<table class="table">
+    <tr>
+        <th>Product ID</th>
+        <th>Name</th>
+        <th>Manufacturer</th>
+        <th>Available Quantity</th>
+    </tr>
+    <tbody>
+        @foreach (var product in products)
+        {
+            <tr>
+                <td>@product.productId</td>
+                <td><a href="@product.productLink">@product.productName</a></td>
+                <td>@product.manufacturerName</td>
+                <td>@product.inventoryQuantity</td>
+            </tr>
+        }
+    </tbody>
+</table>

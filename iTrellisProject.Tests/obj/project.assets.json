@@ -1,0 +1,80 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "iTrellisProject/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/iTrellisProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/iTrellisProject.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "iTrellisProject/1.0.0": {
+      "type": "project",
+      "path": "../iTrellisProject/iTrellisProject.csproj",
+      "msbuildProject": "../iTrellisProject/iTrellisProject.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "iTrellisProject >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Pafka\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Users\\Pafka\\RiderProjects\\iTrellisProject\\iTrellisProject.Tests\\iTrellisProject.Tests.csproj",
+      "projectName": "iTrellisProject.Tests",
+      "projectPath": "E:\\Users\\Pafka\\RiderProjects\\iTrellisProject\\iTrellisProject.Tests\\iTrellisProject.Tests.csproj",
+      "packagesPath": "C:\\Users\\Pafka\\.nuget\\packages\\",
+      "outputPath": "E:\\Users\\Pafka\\RiderProjects\\iTrellisProject\\iTrellisProject.Tests\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Pafka\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "E:\\Users\\Pafka\\RiderProjects\\iTrellisProject\\iTrellisProject\\iTrellisProject.csproj": {
+              "projectPath": "E:\\Users\\Pafka\\RiderProjects\\iTrellisProject\\iTrellisProject\\iTrellisProject.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}

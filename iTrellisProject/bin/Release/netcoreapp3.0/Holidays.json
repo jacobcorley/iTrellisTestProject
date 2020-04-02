@@ -1,0 +1,27 @@
+﻿[
+  {
+    "name": "New Year's Day",
+    "month": 1,
+    "day": 1
+  },
+  {
+    "name": "Groundhog Day",
+    "month": 2,
+    "day": 2
+  },
+  {
+    "name": "Pi Day",
+    "month": 3,
+    "day": 14
+  },
+  {
+    "name": "April Fool's Day",
+    "month": 4,
+    "day": 1
+  },
+  {
+    "name": "My Birthday",
+    "month": 8,
+    "day": 15
+  }
+]
